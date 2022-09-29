@@ -25,7 +25,8 @@ function draw() {
   
   //if(sqrt )
    for(var x=0; x<(sideLen*num); x = x+sideLen + space){
-     for(var y=0; y<(sideLen*num); y = y+ sideLen + space){
+     //for(var y=0; y<(sideLen*num); y = y+ sideLen + space){
+     for(var y=0; y< (sideLen + space + width + 1); y = y+ sideLen + space){
        fill(0, random(150,200), random(150,200), 150)
      quad(x ,y, x+sideLen,y, x+sideLen,y+sideLen, x ,y+sideLen);
      }
